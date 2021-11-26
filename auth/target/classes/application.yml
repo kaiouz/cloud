@@ -1,0 +1,17 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+      show-components: always
+
+spring:
+  application:
+    name: auth
+
+  cloud:
+    nacos:
+      server-addr: http://127.0.0.1:8848
